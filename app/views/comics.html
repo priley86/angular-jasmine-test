@@ -1,0 +1,23 @@
+<div class="header">
+  <ul class="nav nav-pills pull-right">
+    <li><a ng-href="/">Home</a></li>
+    <li class="active"><a ng-href="#/comics">Comics</a></li>
+  </ul>
+  <h3 class="text-muted">Angular test</h3>
+</div>
+
+<p class='bg-success'>This is the comics view.</p>
+<br/>
+
+<div class='well'>
+	<h5>Here is the data:</h5>
+	<ul>
+		<li ng-repeat='comic in comics | orderBy : "-name"'>
+			<b>Title:</b> {{comic.name}} 
+		</li>
+	</ul>
+</div>
+
+<div class="footer">
+  <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
+</div>
